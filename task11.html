@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial;}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid lightgreen;
+  background-color: lightgreen;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: aqua;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: red;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid yellowgreen;
+  border-top: none;
+}
+</style>
+</head>
+<body>
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'HOME')">HOME</button>
+  <button class="tablinks" onclick="openCity(event, 'NEWS')">NEWS</button>
+  <button class="tablinks" onclick="openCity(event, 'CONTACT')">CONTACT</button>
+</div>
+
+<div id="HOME" class="tabcontent">
+  <h3>HOME</h3>
+  <p>WORK</p>
+  <P>BUSSINESS</P>
+  <P>SERVICES</P>
+</div>
+
+<div id="NEWS" class="tabcontent">
+  <h3></h3>
+  <p>CRIME</p>
+  <P>BANED</P>
+  <P>LAND DEELING</P> 
+</div>
+
+<div id="CONTACT" class="tabcontent">
+  <h3>CONTACT</h3>
+  <p>POLICE</p>
+  <P>LAYER</P>
+  <P>CBI</P>
+</div>
+</div>   
+</body>
+</html> 
